@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>welcome</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="resources/ck/images/icon/icon.png">
+    <link rel="stylesheet" type="text/css" media="all"
+          href="resources/front/template/assetsnaps/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="all"
+          href="resources/front/template/assetsnaps/css/main.css">
+    <link rel="stylesheet" type="text/css" media="all"
+          href="resources/front/template/assetsnaps/css/carousel.css">
+    <link rel="stylesheet" type="text/css" media="all"
+          href="resources/front/template/assetsnaps/css/animate.css">
+    <link rel="stylesheet" type="text/css"
+          href="resources/front/template/assetsnaps/css/syntax.css">
+    <link rel="stylesheet"
+          href="resources/front/template/assetsnaps/css/jtsage-datebox-4.0.0.bootstrap.min.css">
+    <link rel="stylesheet" href="resources/front/template/assetsnaps/css/bootstrap-select.min.css">
+    <!--
+  <link rel="stylesheet" href="https://silviomoreto.github.io/bootstrap-select/dist/css/bootstrap-select.min.css">
+  -->
+    <!--
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+      -->
+    <style>
+
+:focus {outline:none}
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+ #myCarousel .carousel-inner {
+ padding-top: 0px;
+}
+#myCarousel .carousel-inner .item {
+    margin-top : -30px
+}
+ section:not(#banner) {
+ -webkit-overflow-scrolling : touch;
+}
+ul {
+    -webkit-padding-start: 0px;
+    -webkit-overflow-scrolling : touch;
+}
+/*.form-control.hobby {
+    height: 120px
+}*/
+#msg .btn:focus, #msg .btn:hover {
+    color : #2255a6
+}
+.ui-datebox-datebox-group .btn, .ui-datebox-datebox-group .btn:hover {
+    color : #333
+}
+.ui-datebox-datebox-group .form-control {
+    padding-right: 0px;
+    border-color: #ccc
+}
+.fadeInLeft {
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+}
+.fadeInRight {
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+}
+#lifeCarousel .carousel-inner {
+    z-index : 999;
+    -webkit-overflow-scrolling : touch;
+    overflow-y : scroll;
+}
+.select-wrapper .btn {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    color: #333;
+    background: none !important;
+    border: none;
+    border-radius: 0;
+    box-shadow: none !important;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+}
+.man{
+    background:url(resources/ck/images/icon/businessman.png)
+}
+.icon1{
+    background:url(resources/front/template/assetsnaps/images/icons/insurance_48px.svg)!important
+}
+.icon2{
+    background:url(resources/front/template/assetsnaps/images/icons/real_property_48px.svg)!important
+}
+.icon3{
+    background:url(resources/front/template/assetsnaps/images/icons/stock_48px.svg)!important
+}
+
+
+    </style>
+</head>
+<body>
+
+<div id="sidebar-wrapper">
+    <div class="profile">
+        <div class="profile-pic man">
+            <div class="premium-member" style="display:none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48H0z" fill="none"></path>
+                    <path d="M23.99 4C12.94 4 4 12.95 4 24s8.94 20 19.99 20C35.04 44 44 35.05 44 24S35.04 4 23.99 4zm8.47 32L24 30.9 15.54 36l2.24-9.62-7.46-6.47 9.84-.84L24 10l3.84 9.07 9.84.84-7.46 6.47L32.46 36z"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="profile-description"><h4 class="member_name"></h4>
+            <p class="member_type">Standard Member</p> <a class="link-page"
+                                                          data-title="Edit Profile" href="/edit">edit
+                profile</a></div>
+    </div>
+    <nav id="left-menu" class="navbar navbar-default" role="navigation">
+        <ul class="nav navbar-nav">
+            <li style="display: none;" class="upgrade"><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48H0z" fill="none"/>
+                    <path d="M23.99 4C12.94 4 4 12.95 4 24s8.94 20 19.99 20C35.04 44 44 35.05 44 24S35.04 4 23.99 4zm8.47 32L24 30.9 15.54 36l2.24-9.62-7.46-6.47 9.84-.84L24 10l3.84 9.07 9.84.84-7.46 6.47L32.46 36z"/>
+                </svg>
+                Upgrade to Premium</a></li> <!-- -->
+            <li><a class="link-page" data-nohistory="true" data-title="Notification"
+                   href="/notification">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="48" height="48" viewBox="0 0 48 48">
+                    <defs>
+                        <path id="a" d="M0 0h48v48H0z"/>
+                    </defs>
+                    <clipPath id="b">
+                        <use xlink:href="#a" overflow="visible"/>
+                    </clipPath>
+                    <path clip-path="url(#b)"
+                          d="M24 44c2.21 0 4-1.79 4-4h-8c0 2.21 1.79 4 4 4zm12-12V22c0-6.15-3.27-11.28-9-12.64V8c0-1.66-1.34-3-3-3s-3 1.34-3 3v1.36c-5.73 1.36-9 6.49-9 12.64v10l-4 4v2h32v-2l-4-4z"/>
+                </svg>
+                Notifications <span style="display: none;" class="numbers">0</span> </a></li>
+
+            <li class="premium-only"  style="display:none;"><a class="link-page cache"  data-nohistory="true" data-title="My Referrer Code" href="/account-code">
+
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <g>
+                <g>
+                    <path d="M496.659,312.107l-47.061-36.8c0.597-5.675,1.109-12.309,1.109-19.328c0-7.019-0.491-13.653-1.109-19.328l47.104-36.821
+                    c8.747-6.912,11.136-19.179,5.568-29.397L453.331,85.76c-5.227-9.557-16.683-14.464-28.309-10.176l-55.531,22.293
+                    c-10.645-7.68-21.803-14.165-33.344-19.349l-8.448-58.901C326.312,8.448,316.584,0,305.086,0h-98.133
+                    c-11.499,0-21.205,8.448-22.571,19.456l-8.469,59.115c-11.179,5.035-22.165,11.435-33.28,19.349l-55.68-22.357
+                    C76.52,71.531,64.04,76.053,58.856,85.568L9.854,170.347c-5.781,9.771-3.392,22.464,5.547,29.547l47.061,36.8
+                    c-0.747,7.189-1.109,13.44-1.109,19.307s0.363,12.117,1.109,19.328l-47.104,36.821c-8.747,6.933-11.115,19.2-5.547,29.397
+                    l48.939,84.672c5.227,9.536,16.576,14.485,28.309,10.176l55.531-22.293c10.624,7.659,21.781,14.144,33.323,19.349l8.448,58.88
+                    C185.747,503.552,195.454,512,206.974,512h98.133c11.499,0,21.227-8.448,22.592-19.456l8.469-59.093
+                    c11.179-5.056,22.144-11.435,33.28-19.371l55.68,22.357c2.688,1.045,5.483,1.579,8.363,1.579c8.277,0,15.893-4.523,19.733-11.563
+                    l49.152-85.12C507.838,331.349,505.448,319.083,496.659,312.107z M256.019,341.333c-47.061,0-85.333-38.272-85.333-85.333
+                    s38.272-85.333,85.333-85.333s85.333,38.272,85.333,85.333S303.08,341.333,256.019,341.333z"/>
+                </g>
+            </g>
+        </svg>
+                Referrer Code</a></li>
+
+            <li class="no-upperline-only"  style="display:none;"><a class="link-page cache"  data-nohistory="true" data-title="My Referrer Code" href="/upperline-code">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+
+               <path d="M48.014,42.889l-9.553-4.776C37.56,37.662,37,36.756,37,35.748v-3.381c0.229-0.28,0.47-0.599,0.719-0.951
+	c1.239-1.75,2.232-3.698,2.954-5.799C42.084,24.97,43,23.575,43,22v-4c0-0.963-0.36-1.896-1-2.625v-5.319
+	c0.056-0.55,0.276-3.824-2.092-6.525C37.854,1.188,34.521,0,30,0s-7.854,1.188-9.908,3.53C17.724,6.231,17.944,9.506,18,10.056
+	v5.319c-0.64,0.729-1,1.662-1,2.625v4c0,1.217,0.553,2.352,1.497,3.109c0.916,3.627,2.833,6.36,3.503,7.237v3.309
+	c0,0.968-0.528,1.856-1.377,2.32l-8.921,4.866C8.801,44.424,7,47.458,7,50.762V54c0,4.746,15.045,6,23,6s23-1.254,23-6v-3.043
+	C53,47.519,51.089,44.427,48.014,42.889z M51,54c0,1.357-7.412,4-21,4S9,55.357,9,54v-3.238c0-2.571,1.402-4.934,3.659-6.164
+	l8.921-4.866C23.073,38.917,24,37.354,24,35.655v-4.019l-0.233-0.278c-0.024-0.029-2.475-2.994-3.41-7.065l-0.091-0.396l-0.341-0.22
+	C19.346,23.303,19,22.676,19,22v-4c0-0.561,0.238-1.084,0.67-1.475L20,16.228V10l-0.009-0.131c-0.003-0.027-0.343-2.799,1.605-5.021
+	C23.253,2.958,26.081,2,30,2c3.905,0,6.727,0.951,8.386,2.828c1.947,2.201,1.625,5.017,1.623,5.041L40,16.228l0.33,0.298
+	C40.762,16.916,41,17.439,41,18v4c0,0.873-0.572,1.637-1.422,1.899l-0.498,0.153l-0.16,0.495c-0.669,2.081-1.622,4.003-2.834,5.713
+	c-0.297,0.421-0.586,0.794-0.837,1.079L35,31.623v4.125c0,1.77,0.983,3.361,2.566,4.153l9.553,4.776
+	C49.513,45.874,51,48.28,51,50.957V54z"/>
+        </svg>
+                Find a Agent</a></li>
+            <li class=""><a class="link-page cache"  data-nohistory="true" data-title="Invite and Reward" href="/account-ref">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <g>
+                <g>
+                    <path d="M0,83.134v345.731h512V83.134H0z M451.362,116.526L330.303,224.038c-10.387-13.116-26.435-21.554-44.427-21.554
+                    c-10.652,0-20.989,3.013-29.876,8.528c-8.888-5.516-19.224-8.528-29.876-8.528c-17.991,0-34.039,8.438-44.427,21.554
+                    L60.637,116.526H451.362z M309.152,259.151c0,11.777-13.128,27.902-39.022,47.929c-4.383,3.39-9.694,7.132-14.13,10.171
+                    c-4.437-3.039-9.748-6.781-14.13-10.171c-25.893-20.027-39.022-36.152-39.022-47.929c0-12.834,10.441-23.276,23.276-23.276
+                    c6.635,0,12.977,2.853,17.399,7.827L256,257.736l12.477-14.034c4.422-4.974,10.764-7.827,17.399-7.827
+                    C298.711,235.875,309.152,246.317,309.152,259.151z M33.391,136.987L169.49,257.855c-0.01,0.433-0.033,0.862-0.033,1.297
+                    c0,2.366,0.188,4.699,0.513,7.004L33.391,377.098V136.987z M63.73,395.474l120.371-97.778
+                    c10.214,13.679,24.293,25.705,37.34,35.795c10.508,8.127,24.864,17.46,25.47,17.853l9.09,5.899l9.09-5.899
+                    c0.605-0.393,14.961-9.726,25.47-17.853c13.047-10.091,27.126-22.117,37.34-35.795l120.371,97.778H63.73z M478.609,377.099
+                    L342.03,266.155c0.325-2.305,0.513-4.638,0.513-7.004c0-0.434-0.023-0.864-0.033-1.296l136.099-120.869V377.099z"/>
+                </g>
+            </g>
+
+        </svg>
+
+
+
+                Invite and reward</a></li>
+
+
+
+            <li class=""><a class="link-page" data-nohistory="true" data-title="About Snaps"
+                            href="/about">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48H0z" fill="none"/>
+                    <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm2 30h-4V22h4v12zm0-16h-4v-4h4v4z"/>
+                </svg>
+                AboutSnaps</a></li>
+            <li class=""><a data-title="Contact Us" class="link-page cache" data-nohistory="true"
+                            href="/contact">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M40 8H8c-2.21 0-3.98 1.79-3.98 4L4 36c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V12c0-2.21-1.79-4-4-4zm0 8L24 26 8 16v-4l16 10 16-10v4z"/>
+                    <path d="M0 0h48v48H0z" fill="none"/>
+                </svg>
+                Contact Us</a></li>
+            <li><a class="logout" href="javascript:void(-1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48H0z" fill="none"/>
+                    <path d="M20.17 31.17L23 34l10-10-10-10-2.83 2.83L25.34 22H6v4h19.34l-5.17 5.17zM38 6H10c-2.21 0-4 1.79-4 4v8h4v-8h28v28H10v-8H6v8c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4z"/>
+                </svg>
+                Logout</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="panel">
+    <header><a id="hamburger" class="btn-circle pull-left hamburger" data-toggle="offcanvas"><span
+            class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a> <a
+            class="history-back" style="display: none;"> <span class="glyphicon glyphicon-menu-left"
+                                                               aria-hidden="true"></span> </a> <h4
+            class="p-title">Dashboard</h4></header>
+    <section id="banner">
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel"
+             data-interval="false">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-title="Insurance" data-link="/form-insurence"
+                    data-slide-to="0" class="active icon1"></li>
+                <li data-target="#myCarousel" data-title="Property" data-link="/form-property"
+                    data-slide-to="1" class="icon2"></li>
+                <li data-target="#myCarousel" data-title="Stock" data-link="/form-stock"
+                    data-slide-to="2" class="icon3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="banner background banner1"></div>
+                    <div class="caption">
+                        <div class="caption-main"><h3>Insurance</h3> <a class="link-page"
+                                                                        data-title="Summary"
+                                                                        href="/summary">view my
+                            policies</a></div>
+                        <div class="caption-left"><p>Total Coverage</p> <h5
+                                class="insurance_total"></h5></div>
+                        <div class="caption-right"><p>Total Annual Premium</p> <h5
+                                class="insurance_sum"></h5></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banner background banner2"></div>
+                    <div class="caption">
+                        <div class="caption-main"><h3>Real Property</h3> <a class="link-page"
+                                                                            data-title="Summary"
+                                                                            href="/summary">view my
+                            policies</a></div>
+                        <div class="caption-left"><p>Total Owned</p> <h5
+                                class="property_count"></h5></div>
+                        <div class="caption-right"><p>Total Valuation</p> <h5
+                                class="property_sum"></h5></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banner background banner3"></div>
+                    <div class="caption">
+                        <div class="caption-main"><h3>Stock / Unit Trust</h3> <a class="link-page"
+                                                                                 data-title="Summary"
+                                                                                 href="/summary">view
+                            my policies</a></div>
+                        <div class="caption-left"><p>Total Investments</p> <h5
+                                class="stock_count"></h5></div>
+                        <div class="caption-right"><p>Total Valuation</p> <h5
+                                class="stock_sum"></h5></div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> </a> <a
+                class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> </a></div>
+    </section>
+    <nav id="bottom-menu" class="navbar navbar-dashboard navbar-fixed-bottom">
+        <div class="container">
+            <ul>
+                <li><a class="link-page cache" data-title="My AssetSnaps" data-nohistory="true"
+                       id="dlink"  inited="done" href="/dashboard">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                         viewBox="0 0 48 48">
+                        <path d="M0 0h48v48H0z" fill="none"/>
+                        <path d="M6 26h16V6H6v20zm0 16h16V30H6v12zm20 0h16V22H26v20zm0-36v12h16V6H26z"/>
+                    </svg>
+                    Dashboard</a></li>
+                <li class=""><a class="link-page" data-title="Partners" data-nohistory="true"
+                                href="/partners">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                         viewBox="0 0 48 48">
+                        <path d="M0 0h48v48H0z" fill="none"/>
+                        <path d="M32 22c3.31 0 5.98-2.69 5.98-6s-2.67-6-5.98-6c-3.31 0-6 2.69-6 6s2.69 6 6 6zm-16 0c3.31 0 5.98-2.69 5.98-6s-2.67-6-5.98-6c-3.31 0-6 2.69-6 6s2.69 6 6 6zm0 4c-4.67 0-14 2.34-14 7v5h28v-5c0-4.66-9.33-7-14-7zm16 0c-.58 0-1.23.04-1.93.11C32.39 27.78 34 30.03 34 33v5h12v-5c0-4.66-9.33-7-14-7z"/>
+                    </svg>
+                    Partners</a></li>
+                <li class=""><a data-title="Notification" class="link-page" data-nohistory="true"
+                                href="/notification">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48"
+                         viewBox="0 0 48 48">
+                        <defs>
+                            <path id="a" d="M0 0h48v48H0z"/>
+                        </defs>
+                        <clipPath id="b">
+                            <use xlink:href="#a" overflow="visible"/>
+                        </clipPath>
+                        <path clip-path="url(#b)"
+                              d="M24 44c2.21 0 4-1.79 4-4h-8c0 2.21 1.79 4 4 4zm12-12V22c0-6.15-3.27-11.28-9-12.64V8c0-1.66-1.34-3-3-3s-3 1.34-3 3v1.36c-5.73 1.36-9 6.49-9 12.64v10l-4 4v2h32v-2l-4-4z"/>
+                    </svg> <span style="display: none;" class="numbers">0</span>  Notification</a></li>
+            </ul>
+        </div>
+        <div id="dropdown" style="display:none;" class="dropdown btn-more">
+            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">+
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a id="form-pop" href="javascript:void(-1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                         viewBox="0 0 48 48">
+                        <path d="M0 0h48v48H0z" fill="none"/>
+                        <path d="M28 4H12C9.79 4 8.02 5.79 8.02 8L8 40c0 2.21 1.77 4 3.98 4H36c2.21 0 4-1.79 4-4V16L28 4zm4 28h-6v6h-4v-6h-6v-4h6v-6h4v6h6v4zm-6-14V7l11 11H26z"/>
+                    </svg>
+                </a></li>
+                <li><a id="upload-pop" href="javascript:void(-1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                         viewBox="0 0 48 48">
+                        <path d="M0 0h48v48H0z" fill="none"/>
+                        <path d="M18 32h12V20h8L24 6 10 20h8zm-8 4h28v4H10z"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<script src="resources/gen/js/-1281346213-595367110.js"></script>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="resources/front/template/assetsnaps/js/assetsnaps.js"></script>
+<script src="resources/js/jquery.form.js"></script>
+<script src="resources/js/common.js"></script>
+<!--
+
+-->
+<script src="resources/front/template/assetsnaps/js/main.js"></script>
+<script src="resources/front/template/assetsnaps/js/bootstrap-select.js"></script>
+<script>
+document.offline = true;
+document.basic_url ="https://assetsnaps.com"
+
+    pushRootPage();
+     setTimeout(function(){
+    loadSummary();
+    
+    if (document.nativeUploadToken){
+    
+        document.nativeUploadToken();
+    }
+    
+},500); 
+
+
+
+function historyback(){
+        var config = {
+                    container :$("section:first"),
+                    css       : "fadeInLeft",
+                    replace   : true   
+        }
+        cms24k.backHtml(config,true);
+        if (cms24k.urls.length == 1){
+            $(".history-back").hide();
+        }
+}
+
+document.historyback = historyback; 
+$(".history-back").click(function(e){
+    e.preventDefault();
+    historyback();
+ });
+ 
+     $(document).on("click", "#form-profile", function() {
+        var form = $(this).parents("form:first");
+        if (!validateForm(form)) {
+            return;
+        }
+        $.ajax({
+            type : "POST",
+            url : "/pub-member/profile/update/",
+            data : form.serialize(),
+            dataType : "json",
+            success : function(data) {
+                if (data && data.state && (data.state.indexOf("ERROR") != -1)) {
+                    alert(data.message);
+                } else {
+                    if ("form" == $("#dlink").attr("exec")) {
+                        pushRootPage();
+                        var link = $("#dlink").attr("link");
+                        $("#dummp").attr("href", link);
+                        $("#dummp").trigger("click");
+                        $("#dlink").attr("inited", "done");
+                    } else {
+                        $("#dlink").attr("inited", "pop");
+                        $("#dlink").trigger("click");
+                    }
+                }
+            }
+        });
+    });
+ 
+ 
+ 
+ $("#dropdown").show();
+$(document).on('click',".link-page",function(e){
+    e.preventDefault();
+    try{
+    var link = $(this).attr("href");
+    var url = "/pub-page"+link;
+    var cache = $(this).hasClass("cache");
+    var no_history = $(this).data("nohistory");
+    var nh ;
+    if (no_history){
+        nh = true;
+    }else{
+        nh  = false;
+    }
+//  alert(cache);
+    
+    var title = $(this).data("title");
+            var config = {
+                    container : $("section:first"),
+                    css       : "fadeInRight",
+                    url       : url,
+                    top       : 0,
+                    docTop    : 0,
+                    title     : title,
+                    replace   : true,
+                    nohistory  : nh    
+        }
+    if(nh){
+        cms24k.loadHtml(config,cache);
+        $(".history-back").hide();
+    }else{
+        cms24k.loadHtml(config,cache);
+        $(".history-back").show();
+    }
+
+    
+    $(".navbar-nav").find("li").removeClass("active");
+    $("#bottom-menu").find("li").removeClass("active");
+    var x =  $(this).parents(".navbar-nav");
+     if (x.length>0){
+       $(this).parents("li:first").addClass("active");
+     }
+     
+     x = $(this).parents("#bottom-menu");
+     if (x.length > 0 ){
+       $(this).parents("li:first").addClass("active");
+     }
+
+setTimeout(function(){
+
+if($("section").length) {
+//  console.dir("xx")
+
+}
+},500);
+
+     
+     
+setTimeout(function(){
+var open =  $("#sidebar-wrapper").hasClass("is-open")
+if (open){
+$("#hamburger").trigger("click");
+}
+},200);
+
+    }catch(err){
+    
+        alert(err);
+    
+    }
+}); 
+
+
+
+$(document).on("scrollstop",function(){
+//      var top = $(document).scrollTop();
+//      if (top != nstart){
+//              nstart = top - 1;
+//              $(this).scrollTop(top-1);
+//      }
+});
+
+
+//$("section").css("height",function(){
+//        var x = ($( window  ).height() - 140)
+//        return x+"px";
+//});
+ 
+ $(document).on('afterReplace', function(e, config) {
+     equalheight('.same-height>div');
+//  $("section").css("overflow-y","scroll");
+
+//$("section").css("height",function(){
+//        var x = ($( window  ).height() - 140)
+//        return x+"px";
+//});
+ 
+ });
+ 
+ 
+$("#left-menu ul li a[href='\/welcome']").parents("li:first").addClass("active");
+$("#bottom-menu ul li a[href='\/welcome']").parents("li:first").addClass("active");
+
+</script>
+<a id="dummp" cache="true" class="cache link-page"></a> <input type="date" class="hidden" id="ddate"> <div class="modal fade" id="myUpload" tabindex="-1" role="dialog" aria-labelledby="myUploadModalLabel"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-body"> <h4 class="modal-title" id="myUploadModalLabel">Upload a Policy</h4> <p>Your policy should contain the following information:<br/> 1. Start date<br/> 2. Expiry date<br/> 3. Premium<br/> 4. Coverage</p> <ul class="list-svg list-unstyled"> <li><a data-toggle="modal" data-target="#upload-cam" data-dismiss="modal" aria-label="Close"> <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <circle cx="24" cy="24" r="6.4"/> <path d="M18 4l-3.66 4H8c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V12c0-2.21-1.79-4-4-4h-6.34L30 4H18zm6 30c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10z"/> <path d="M0 0h48v48H0z" fill="none"/> </svg> Camera</a></li> <li><a data-toggle="modal" data-target="#upload-photo" data-dismiss="modal" aria-label="Close"> <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <path d="M42 38V10c0-2.21-1.79-4-4-4H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4zM17 27l5 6.01L29 24l9 12H10l7-9z"/> <path d="M0 0h48v48H0z" fill="none"/> </svg> Photo & Video Library</a></li> <li><a data-toggle="modal" data-target="#upload-doc" data-dismiss="modal" aria-label="Close"> <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <path d="M12 4C9.79 4 8.02 5.79 8.02 8L8 40c0 2.21 1.77 4 3.98 4H36c2.21 0 4-1.79 4-4V16L28 4H12zm14 14V7l11 11H26z"/> <path d="M0 0h48v48H0z" fill="none"/> </svg> Documents</a></li> </ul> <p class="text-right"><a href="#" data-dismiss="modal" aria-label="Close">CANCEL</a></p> </div> </div> </div> </div> <!-- Modal --> <div class="an-show modal fade" id="upload-cam" tabindex="-1" role="dialog" aria-labelledby="camLabel"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-body"> <div class="row"> <label class="btn-bs-file"> <form id="camForm" action="/pub-assetsnaps/photo" method="post" enctype="multipart/form-data"> <input type="file" id="camFile" name="photo" accept="image/*" capture="camera" > </form> <div class="col-xs-3 col-sm-2"> <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <circle cx="24" cy="24" r="6.4"/> <path d="M18 4l-3.66 4H8c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V12c0-2.21-1.79-4-4-4h-6.34L30 4H18zm6 30c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10z"/> <path d="M0 0h48v48H0z" fill="none"/> </svg> </div> <div class="col-xs-9 col-sm-10"> <a href="#"> <h4 class="modal-title" id="camLabel">Take a photo here</h4> <p id="camSize"></p> </a> </div> </div> <br/> <p class="text-right"><a href="#" data-dismiss="modal" aria-label="Close">CANCEL</a> <a id="camUpload" aria-label="Close">UPLOAD</a></p> </div> </div> </div> </div> <div class="an-show modal fade" id="upload-photo" tabindex="-1" role="dialog" aria-labelledby="imageLabel"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-body"> <div class="row"> <label class="btn-bs-file"> <form id="imageForm" action="/pub-assetsnaps/photo" method="post" enctype="multipart/form-data"> <input name="photo" id="imageFile" accept="image/*" type="file"> </form> <div class="col-xs-3 col-sm-2"> <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <path fill="none" d="M0 0h48v48H0z"/> <path d="M40 4H16c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zM23 19c0 1.66-1.34 3-3 3h-2v4h-3V14h5c1.66 0 3 1.34 3 3v2zm10 4c0 1.66-1.34 3-3 3h-5V14h5c1.66 0 3 1.34 3 3v6zm8-6h-3v2h3v3h-3v4h-3V14h6v3zm-23 2h2v-2h-2v2zM8 12H4v28c0 2.21 1.79 4 4 4h28v-4H8V12zm20 11h2v-6h-2v6z"/> </svg> </div> <div class="col-xs-9 col-sm-10"> <h4 class="modal-title" id="imageLabel">Please choose your Image</h4> <p id="imageSize"></p> </div> </label> </div> <br/> <p class="text-right"><a href="#" data-dismiss="modal" aria-label="Close">CANCEL</a> <a id="imageUpload" aria-label="Close">UPLOAD</a></p> </div> </div> </div> </div> <!-- Modal --> <div class="an-show modal fade" id="upload-doc" tabindex="-1" role="dialog" aria-labelledby="docLabel"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-body"> <div class="row"> <label class="btn-bs-file"> <form id="docForm" action="/pub-assetsnaps/doc" method="post" enctype="multipart/form-data"> <input id="docFile" name="doc" type="file" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,text/plain, application/pdf"> </form> <div class="col-xs-3 col-sm-2"> <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <path fill="none" d="M0 0h48v48H0z"/> <path d="M40 4H16c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zM23 19c0 1.66-1.34 3-3 3h-2v4h-3V14h5c1.66 0 3 1.34 3 3v2zm10 4c0 1.66-1.34 3-3 3h-5V14h5c1.66 0 3 1.34 3 3v6zm8-6h-3v2h3v3h-3v4h-3V14h6v3zm-23 2h2v-2h-2v2zM8 12H4v28c0 2.21 1.79 4 4 4h28v-4H8V12zm20 11h2v-6h-2v6z"/> </svg> </div> <div class="col-xs-9 col-sm-10"> <h4 class="modal-title" id="docLabel">Please choose your docs</h4> <p id="docSize"> </p> </div> </label> </div> <br/> <p class="text-right"><a href="#" data-dismiss="modal" aria-label="Close">CANCEL</a> <a id="docUpload" aria-label="Close">UPLOAD</a></p> </div> </div> </div> </div> <!-- Modal --> <div class="an-show modal fade" id="uploading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-body"> <h4>Uploading your files</h4> <div class="progress"> <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> </div> </div> <br/> <!-- <p class="text-right"><a href="#" data-dismiss="modal" aria-label="Close">CANCEL</a></p> --> </div> </div> </div> </div> <div class="modal fade" id="premiumModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-body"> <h4 class="modal-title" id="myModalLabel">Premium</h4> <p>As a premium member, not only can you view your own financial portfolio, you can also have easy access to view and manage your client's portfoilo with just one click.</p> <br/> <p class="text-right"><a id="buyPremium" href="javascript:void(-1)">Upgrade</a> <a href="#" data-dismiss="modal" aria-label="Close">Cancel</a> </p> </div> </div> </div> </div> <!-- Modal -->
+
+
+
+<div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-body"> <h4 class="modal-title" id="myModalLabel">Upload Succesful!</h4> <p>Your policy summary will be updated within 48 working hours</p> <br/>
+
+
+
+    <p class="text-right"><a  id="upload-another"  href="#" data-dismiss="modal" aria-label="Close">Upload another</a> <a href="#" data-dismiss="modal" aria-label="Close">OK</a></p>
+
+
+</div> </div> </div> </div>
+
+
+
+<div style="display: none;" id ="Others"> <div class="form-group"> <label class="sr-only">Premium</label> <input type="number" name="premium" class="form-control " placeholder="Premium"> </div> <div class="form-group"> <label class="sr-only">Policy Start Date</label> <input type="text" name="startDate" before="expireDate" class="form-control date-input" placeholder="Policy Start Date"> </div> <div class="form-group"> <label class="sr-only">Policy Expire Date</label> <input type="text" name="expireDate" after="startDate" class="form-control date-input" placeholder="Policy Expire Date"> </div> </div> <div style="display: none;" id ="PublicLiability"> <div class="form-group"> <label class="sr-only">Premium</label> <input type="number" name="premium" class="form-control " placeholder="Premium"> </div> <div class="form-group"> <label class="sr-only">Policy Start Date</label> <input type="text" name="startDate" before="expireDate" class="form-control date-input" placeholder="Policy Start Date"> </div> <div class="form-group"> <label class="sr-only">Policy Expire Date</label> <input type="text" name="expireDate" after="startDate" class="form-control date-input" placeholder="Policy Expire Date"> </div> </div> <div style="display: none;" id ="ProfessionalIndemnity"> <div class="form-group"> <label class="sr-only">Premium</label> <input type="number" name="premium" class="form-control " placeholder="Premium"> </div> <div class="form-group"> <label class="sr-only">Policy Start Date</label> <input type="text" name="startDate" before="expireDate" class="form-control date-input" placeholder="Policy Start Date"> </div> <div class="form-group"> <label class="sr-only">Policy Expire Date</label> <input type="text" name="expireDate" after="startDate" class="form-control date-input" placeholder="Policy Expire Date"> </div> </div> <div style="display: none;" id ="WorkInjuryCompensation"> <div class="form-group"> <label class="sr-only">Premium</label> <input type="number" name="premium" class="form-control " placeholder="Premium"> </div> <div class="form-group"> <label class="sr-only">Policy Start Date</label> <input type="text" name="startDate" before="expireDate" class="form-control date-input" placeholder="Policy Start Date"> </div> <div class="form-group"> <label class="sr-only">Policy Expire Date</label> <input type="text" name="expireDate" after="startDate" class="form-control date-input" placeholder="Policy Expire Date"> </div> </div> <div style="display: none;" id ="MaidInsurance"> <div class="form-group"> <label class="sr-only">Premium</label> <input type="number" name="premium" class="form-control " placeholder="Premium"> </div> <div class="form-group"> <label class="sr-only">Policy Start Date</label> <input type="text" name="startDate" before="expireDate" class="form-control date-input" placeholder="Policy Start Date"> </div> <div class="form-group"> <label class="sr-only">Policy Expire Date</label> <input type="text" name="expireDate" after="startDate" class="form-control date-input" placeholder="Policy Expire Date"> </div> </div> <div style="display: none;" id ="HomeInsurance"> <div class="form-group"> <label class="sr-only">Premium</label> <input type="number" name="premium" class="form-control " placeholder="Premium"> </div> <div class="form-group"> <label class="sr-only">Policy Start Date</label> <input type="text" name="startDate" before="expireDate" class="form-control date-input" placeholder="Policy Start Date"> </div> <div class="form-group"> <label class="sr-only">Policy Expire Date</label> <input type="text" name="expireDate" after="startDate" class="form-control date-input" placeholder="Policy Expire Date"> </div> </div> <div style="display: none;" id ="OfficeInsurance"> <div class="form-group"> <label class="sr-only">Premium</label> <input type="number" name="premium" class="form-control " placeholder="Premium"> </div> <div class="form-group"> <label class="sr-only">Policy Start Date</label> <input type="text" name="startDate" before="expireDate" class="form-control date-input" placeholder="Policy Start Date"> </div> <div class="form-group"> <label class="sr-only">Policy Expire Date</label> <input type="text" name="expireDate" after="startDate" class="form-control date-input" placeholder="Policy Expire Date"> </div> </div> <div style="display: none;" id ="PersonalAccident"> <div class="form-group"> <label class="sr-only">Policy Holder</label> <input type="text" name="policyHolder" class="form-control" placeholder="Policy Holder"> </div> <div class="row no-gutters-5"> <div class="col-xs-6"> <div class="form-group"> <label class="sr-only">Policy Number</label> <input type="text" name="policyNumber" class="form-control" placeholder="Policy Number"> </div> </div> <div class="col-xs-6"> <div class="form-group"> <label class="sr-only">Premeium</label> <input type="text" class="form-control " name="premeium" placeholder="Premeium"> </span></div> </div> </div> <div class="form-group"> <label class="sr-only">Policy Commencement Date</label> <input type="text" name="policyCommencementDate" class="form-control date-input" placeholder="Policy Commencement Date"> </div> <div class="row no-gutters-5"> <div class="col-xs-6"> <div class="form-group"> <label class="sr-only">Payment Mode</label> <span class="select-wrapper form-control"> <select name="paymentMode" class="no-radius" > <option>Payment Mode</option> <option value="Whole Life">Whole Life</option> <option value="Term Life">Term Life</option> <option value="Investment">Investment</option> <option value="Endownment (savings)">Endownment (savings)</option> </select> </span></div> </div> <div class="col-xs-6"> <div class="form-group"> <label class="sr-only">Frequency</label> <span class="select-wrapper form-control"> <select name="frequency" class="no-radius" > <option value="">Frequency</option> <option value="Monthly">Monthly</option> <option value="Quaterly">Quaterly</option> <option value="Half-Yearly">Half-Yearly</option> <option value="Yearly">Yearly</option> </select> </span></div> </div> </div> <div class="form-group"> <label class="sr-only">Policy Issue Date</label> <input type="text" name="issueDate" class="form-control date-input" placeholder="Issue Date"> </div> <div class="row no-gutters-5"> <div class="col-xs-6"> <div class="form-group"> <label class="sr-only">Medical Reimbersement</label> <input type="text" name="medicalReimbersement" class="form-control" placeholder="Medical Reimbersement"> </div> </div> <div class="col-xs-6"> <div class="form-group"> <label class="sr-only">Weekly Income</label> <input type="text" class="form-control " name="weeklyIncome" placeholder="Weekly Income"> </span></div> </div> </div> </div> <div style="display: none;" id ="Travel"> <div class="row no-gutters-5"> <div class="col-xs-6"> <div class="form-group"> <label class="sr-only">Trip Type</label> <span class="select-wrapper form-control"> <select name="tripType" class="no-radius"> <option value="">Trip Type</option> <option value="Single">Single</option> <option value="Annual">Annual</option> </select> </span></div> </div> <div class="col-xs-6"> <div class="form-group"> <label class="sr-only">Type of Type</label> <span class="select-wrapper form-control"> <select name="policyType" class="no-radius"> <option value="">Type of Plan</option> <option value="Individual">Individual</option> <option value="Family">Family</option> </select> </span></div> </div> </div> <div class="row no-gutters-5"> <div class="col-xs-6"> <div class="form-group"> <label class="sr-only">Coverage Amount</label> <span class="select-wrapper form-control"> <select name="coverageAmount" class="no-radius"> <option value="">Coverage Amount</option> <option value="High">High</option> <option value="Medium">Medium</option> <option value="Low">Low</option> </select> </span></div> </div> <div class="col-xs-6"> <div class="form-group"> <label class="sr-only">Travel Region</label> <span class="select-wrapper form-control"> <select name="travelRegion" class="no-radius"> <option value="">Travel Region</option> <option value="Asean">Asean</option> <option value="Asia Pacific">Asia Pacific</option> <option value="Worldwide">Worldwide</option> </select> </span></div> </div> </div> <div class="form-group"> <label class="sr-only">Premium</label> <input type="number" name="premium" class="form-control" placeholder="Premium"> </div> <div class="form-group"> <label class="sr-only">Policy Start Date</label> <input type="text" name="startDate" class="date-input form-control" placeholder="Policy Start Date"> </div> </div> <div style="display: none;" id ="Motor"> <div class="row no-gutters-5"> <div class="col-xs-6"> <div class="form-group"> <label class="sr-only">Insurer</label> <span class="select-wrapper form-control"> <select name="coverage" class="no-radius"> <option value="">Coverage</option> <option value="Comprehensive">Comprehensive</option> <option value="Third party only">Third party only</option> <option value="Only selection">Only selection</option> </select> </span></div> </div> <div class="col-xs-6"> <div class="form-group"> <label class="sr-only">Premium</label> <input type="number" class="form-control" name="premium" placeholder="Premium"> </div> </div> </div> <div class="form-group"> <label class="sr-only">Policy Start Date</label> <input type="text" name="startDate" class="date-input form-control" placeholder="Policy Start Date"> </div> </div></body>
+</html>
